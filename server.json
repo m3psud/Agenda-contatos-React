@@ -1,0 +1,25 @@
+{
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Shakira",
+      "email": "skakira@gh.email",
+      "telefone": "1111-1111",
+      "image":"https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/06/06/16544929755390.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Marcelo",
+      "email": "marce11@doe.email",
+      "telefone": "2222-2222",
+      "image":"https://img.r7.com/images/marcelo-30052018185537470"
+    },
+    {
+      "id": 3,
+      "nome": "Alicia Machado",
+      "email": "lici@de.email",
+      "telefone": "3333-3333",
+      "image":"https://i.pinimg.com/736x/bf/ed/b9/bfedb9fbb9c2d3e37241b7eadb8b9c94--alicia-machado-beauty-pageant.jpg"
+    }
+  ]
+}
