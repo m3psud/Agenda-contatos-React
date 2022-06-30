@@ -5,7 +5,7 @@ import ListaDeContatos from  "../components/listadecontatos"
 const App = () => {
     return (
       <Container fluid>
-         <h1 className= "text-center" >Lista de Contatos</h1>
+         <h1 className= "text-center" >Meus Contatos</h1>
          <ListaDeContatos />
       </Container>
     )
