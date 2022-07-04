@@ -1,12 +1,21 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+
 import ListaDeContatos from  "../components/listadecontatos"
+import  "../components/style/style.css";
+
+
 
 const App = () => {
-    return (
+ 
+  
+  return (
       <Container fluid>
-         <h1 className= "text-center" >Meus Contatos</h1>
-         <ListaDeContatos />
+        <br />
+         <h2 className= "text-center"> Lista de contatos</h2>
+         <br />
+         <ListaDeContatos  />
+         
       </Container>
     )
 }

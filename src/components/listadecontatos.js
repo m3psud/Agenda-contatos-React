@@ -1,24 +1,31 @@
-import React,{ useEffect,useState }from "react";
-import axios from "axios";
+import React,{ useEffect,useState}from "react";
 import Api from "../services/API";
 import CardContact from "./CardContact"
 import { Container, Row } from "react-bootstrap";
 
 
+
+
     
 const ListaDeContatos = () => {
-      
-  const [state, setState] = useState([])
-    
   
+  
+  const getData = async () => {
+    const response =  await Api.get('/contatos');
+    return response;
+  }
 
-  
-  useEffect(async() => {
-      Api.get('/contatos')
-      .then((response) => {
-      setState(response.data);
-      })
-  }, [])
+  const [state, setState] = useState([])
+  const [updateState, setUpdateState] = useState(false)
+ 
+
+ 
+    
+  useEffect(() => {
+        getData().then((response) => {
+        setState(response.data);
+        })
+    }, [updateState])
 
     return(
        <Container className="mb-5">
@@ -29,16 +36,21 @@ const ListaDeContatos = () => {
                <CardContact
                  key={index}
                  contatos={contatos}
-               />
+                 setUpdateState={setUpdateState}
+                 updateState={updateState}
+                
 
+               />
+            
+               
 
             )
-        
+            
         }
         )
       }
          </Row>
-        
+         
        </Container>
     )
 }

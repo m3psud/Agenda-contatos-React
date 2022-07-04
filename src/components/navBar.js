@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Nav, Navbar }  from "react-bootstrap" ;
 import { Link } from "react-router-dom";
+import "../components/style/style.css"
 
 const NavBar = ()=> {
     return(
         
-            <Navbar bg= "dark" variant= "dark">
-                <Container fluid>
-                 <Link to="/" className="Navbar-brand"> Contatos </Link>
+            <Navbar class="navbar navbar-light bg-light" >
+                <Container fluid className="nav-bar">
+                 <Link to="/" className=" btn  btn-light  btn-sm  titulo me-3 ">Inicio</Link>
                     <Nav className= "me-auto" >
-                  <Link to="/New" className="Nav-link"> Novos </Link>
+                  <Link to="/New" className="btn  btn-warning btn-sm "> Criar un novo Contato  </Link>
+                 
                    </Nav>
                 </Container>
             </Navbar>

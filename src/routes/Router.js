@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 import NavBar from "../components/navBar";
   import App from "../container/App";
+import EditContact from "../container/EditContact";
   import NewContact from "../container/NewContact"
 
 const Router =() => {
@@ -18,6 +19,8 @@ const Router =() => {
           
            <Route  exact path="/" element={<App />} />
            <Route  exact path="/New" element={<NewContact />} />
+           <Route  exact path="/edit/:id" element={<EditContact />} />
+
 
            </Routes>
             
